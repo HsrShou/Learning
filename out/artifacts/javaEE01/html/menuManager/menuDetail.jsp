@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <base href="${pageContext.request.contextPath}/">
@@ -15,7 +15,7 @@
         <TABLE id="tb1">
             <tr>
                 <TD><label>产品名称：</label></td>
-                <td><input type="text" name="menuName" value="${menu.menuName}"/> </TD>
+                <td><input type="text" name="menuName" value="${menu.menuName}"/></TD>
             </tr>
             <tr>
                 <td><label>图片：</label></td>
@@ -29,9 +29,10 @@
                 <TD><label>菜品类别</label></td>
                 <td>
 
-                    <select name="menuTypeId" >
+                    <select name="menuTypeId">
                         <c:forEach items="${mtList}" var="menuType">
-                            <option name="menuType" ${menu.menuTypeId == menuType.TId? "selected" : "" }  value="${menuType.TId}">${menuType.menuTypeName} </option>
+                            <option name="menuType" ${menu.menuTypeId == menuType.TId? "selected" : "" }
+                                    value="${menuType.TId}">${menuType.menuTypeName} </option>
                         </c:forEach>
                     </select>
                 </TD>
