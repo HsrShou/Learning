@@ -1,7 +1,10 @@
 package com.hr.entity;
 
 import java.math.BigDecimal;
-
+/**
+ * @author Han ShouRong
+ * @date 2022/6/25 上午 7:15
+ */
 public class Goods {
     private Integer goodsId;
     private String goodsName;

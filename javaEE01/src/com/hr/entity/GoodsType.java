@@ -1,5 +1,8 @@
 package com.hr.entity;
-
+/**
+ * @author Han ShouRong
+ * @date 2022/6/25 上午 7:15
+ */
 public class GoodsType {
         private Integer typeId;
         private String typeName;

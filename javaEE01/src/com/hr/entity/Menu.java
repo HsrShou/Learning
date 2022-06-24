@@ -1,7 +1,10 @@
 package com.hr.entity;
 
 import java.math.BigDecimal;
-
+/**
+ * @author Han ShouRong
+ * @date 2022/6/25 上午 7:15
+ */
 public class Menu {
 	private Integer id;//开发时，不用int 而是用Integer.int id;
 	private String menuName;
