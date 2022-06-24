@@ -1,0 +1,300 @@
+/*
+==============================================================================
+华电国际 * 流程审批 * 样式控制    |    lcsp_frame.css  *  2006-8
+==============================================================================
+*/
+
+/* == 统一设定 =============================================================== */
+
+body {	margin: 0px; padding:0px;
+
+	/* -- 滚动条颜色 -------  */
+	scrollbar-face-color:		#d4e4f0;
+	scrollbar-highlight-color:	#d4e4f0;
+	scrollbar-shadow-color:		#a0c0d0;
+	scrollbar-3dlight-color:	#d4e4f0;
+	scrollbar-arrow-color:		#d8fcfc;
+	scrollbar-darkshadow-color: #d8fcfc;
+	scrollbar-track-color:		#f0f0f0;
+}
+div, p, th, td, li, dd, dl, dt,img,form {
+	font-size:12px;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	margin:0px;
+	padding:0px;
+	border:0px;
+	background: transparent;
+}
+table {
+	border-collapse: collapse;
+	border:0px;
+}
+
+/* -- 默认链接 -----------------------  */
+a:link	  {text-decoration:none ; background-color: transparent; color:#000; }
+a:active  {text-decoration:none ; background-color: transparent; color:#986; }
+a:hover	  {text-decoration:none ; background-color: transparent; color:#986; }
+a:visited {text-decoration:none ; background-color: transparent; color:#000; }
+
+
+/*
+===================================================================================
+	TOP栏 - 样式定义
+===================================================================================
+*/
+
+#topframe {				/*  */
+	margin:0px;
+	background: #c4e5ff url( ../images/img_top_bg.jpg ) repeat-x top;
+	}
+
+#topframe div {
+	height:80px;
+	background:url( ../images/img_top_logo.jpg ) no-repeat left top;
+}
+
+#topframe div table {
+	height:80px;
+}
+
+#topframe div td {
+	text-align:right;
+	vertical-align:top;
+}
+#topframe input {
+	width:80px;
+	height:22px;
+	line-height:24px;
+	text-align:center;
+	color:#000;
+	font-size:12px;
+	border: 0px solid  #000;
+}
+
+.btn_top {	 /* top栏按钮 */
+	margin:15px 15px 0 0;
+	background:url( ../images/bg_title_6.gif ) repeat-x ;
+	border: 1px solid  #000;
+}
+
+
+.btn_quit {	 /* 退出按钮 */
+	margin:15px 15px 0 0;
+	background:url( ../images/bg_btn_off.gif ) repeat-x ;
+}
+.btn_button {	 /* button */
+	margin:15px 15px 0 0;
+	background:#dbefff;
+}
+
+/*
+===================================================================================
+	left 栏 - 样式定义
+===================================================================================
+*/
+
+.frame_border {  /* 左栏和右栏的框架页内边框线 定义 */
+	border: 1px solid #a8b2be;
+}
+
+/*---页面控制------------------------------*/
+
+#left_frame { background:#f5faff; margin:0px; }
+#left_frame div { width: 148px ; }
+
+/*---用户的显示区域------------------------------*/
+
+#usershow {
+	width: 148px ;
+	height:25px;
+	background:url( ../images/bg_title_1.gif) repeat-x top left ;
+}
+
+#usershow p {
+	line-height:15px;
+	padding-left:30px;
+}
+
+/*==#usershow img {
+	float:left;
+	margin:4px 0 0 3px;
+}=============================*/
+
+/*== 系统管理部分 =============================*/
+
+#sys_manage {}
+
+#sys_manage .title, #self_works .title { /* 两栏的标题定义 */
+	height:36px;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	line-height:36px;
+	padding-left:40px;
+	background:url( ../images/bg_title_5.gif) no-repeat top left ;
+}
+
+/*--列表 和 链接样式--*/
+#sys_manage  ul  {
+	margin:0px;
+	padding:0px;
+	list-style-type : none;
+}
+
+#sys_manage  li a {
+	border-bottom: 1px dotted #bee;
+	padding-left:40px;
+	padding-top:4px;
+	line-height:20px;
+	background : url( ../images/icon_arrow_o.gif) no-repeat 10px 8px ;
+	text-decoration:none ;
+	width:148px;
+}
+
+#sys_manage  li a:link ,
+#sys_manage  li a:visited {
+	border-bottom: 1px dotted #bee;
+	padding-left:40px;
+	padding-top:4px;
+	line-height:20px;
+	background : url( ../images/icon_arrow_o.gif) no-repeat 10px 8px ;
+	text-decoration:none ;
+}
+
+#sys_manage  li a:hover,#self_works  li a:active , {
+	border-bottom: 1px dotted #bee;
+	padding-left:40px;
+	padding-top:4px;
+	line-height:20px;
+	background :#dcf3dd url( ../images/icon_arrow_o.gif) no-repeat 135px 8px ;
+	color:#009551;
+	font-weight:bold;
+	text-decoration:none ;
+}
+
+
+/*--列表 和 链接样式--*/
+
+#self_works  ul  {
+	margin:0px;
+	padding:0px;
+	list-style-type : none;
+}
+
+#self_works  li a {
+	border-bottom: 1px dotted #bee;
+	padding-left:40px;
+	padding-top:4px;
+	line-height:20px;
+	background : url( ../images/icon_arrow_g.gif) no-repeat 10px 8px ;
+	text-decoration:none ;
+	width:148px;
+}
+
+#self_works  li a:link ,
+#self_works  li a:visited {
+	border-bottom: 1px dotted #bee;
+	padding-left:30px;
+	padding-top:4px;
+	line-height:20px;
+	background : url( ../images/icon_arrow_g.gif) no-repeat 10px 8px ;
+	text-decoration:none ;
+}
+
+#self_works  li a:hover,#self_works  li a:active , {
+	border-bottom: 1px dotted #bee;
+	padding-left:30px;
+	padding-top:4px;
+	line-height:20px;
+	background :#dcf3dd url( ../images/icon_arrow_g.gif) no-repeat 10px 8px ;
+	color:#009551;
+	font-weight:bold;
+	text-decoration:none ;
+}
+
+
+/*
+===================================================================================
+	right 栏 - 样式定义
+===================================================================================
+*/
+#rightframe {
+	background:#f5faff;
+}
+#rightframe_title {
+	height:30px;
+	border-bottom:2px solid #d9e2ee;
+	background:url( ../images/bg_title_2.gif) repeat-x top left ;  /* bg_title_2.gif 为当前任务标题底图 */
+}
+
+#rightframe_title p {
+	font-size:16px;
+	font-weight:bold;
+	color:#1e3775;
+	padding:5px 0 0 30px;
+}
+#rightframe_title img {
+	float:left;
+	margin:5px 0 0 10px;
+}
+
+	.readme {	/* 说明提示区域的样式    #e4f0fb(蓝) #ebfeeb(绿) #fcf8e2( 黄)   */
+		padding:5px 15px;
+		margin:0px;
+		line-height:20px;
+		border-top:1px solid #d9e2ee;
+		background:#dbefff;
+		color:#999;
+	}
+
+#rightframe_content {
+	padding:10px;
+}
+
+#rightframe_content table {
+	border:1px solid #a8b2be;
+}
+
+#rightframe_content td {
+	border:1px solid #e7edf4;
+	background:#fff;
+	line-height:20px;
+	padding:2px 2px 2px 10px;
+}
+
+#rightframe_content .title td {
+	height:30px;
+	background:#f5faff url( ../images/bg_title_3.gif ) repeat-x ; /* bg_title_3.gif 为表格标题底图 */
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+}
+.tr_over{
+	background-color:#e7edf4;
+}
+.tr_out{
+	background-color:#fff;
+}
+
+
+
+/*
+===================================================================================
+	button 栏 - 样式定义 ------- *说明： 栏宽8px，点击中间按键钮，隐藏左边拦！
+===================================================================================
+*/
+
+.button_frame_bg {
+	 background:#c4e5ff;
+}
+
+#button_frame img {
+	position:absolute; left:1px; top:230px;
+}
+
+
+/*
+------------------------------- css 结束 ------------------------------------------
+	最后修订日期：
+-----------------------------------------------------------------------------------
+*/
